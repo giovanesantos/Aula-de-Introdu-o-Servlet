@@ -20,9 +20,11 @@ public class Contato extends HttpServlet {
 		writer.println("<html>");
 		writer.println("<body>");
 		writer.println("<h1>Contato</h1>");
-		writer.println("<b>Nome: </b>" + request.getParameter("nome"));
-		writer.println("<br />");
 		writer.println("<b>Email: </b>" + request.getParameter("email"));
+		writer.println("<br />");
+		writer.println("<b>Telefone: </b>" + request.getParameter("fone"));
+		writer.println("<br />");
+		writer.println("<b>Mensagem: </b>" + request.getParameter("mensagem"));
 		writer.println("</body>");
 		writer.println("</html>");
 	}
