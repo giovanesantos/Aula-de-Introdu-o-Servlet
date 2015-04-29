@@ -25,6 +25,11 @@ public class Contato extends HttpServlet {
 		writer.println("<b>Telefone: </b>" + request.getParameter("fone"));
 		writer.println("<br />");
 		writer.println("<b>Mensagem: </b>" + request.getParameter("mensagem"));
+		writer.println("<br />");
+		if (!request.getParameter("novidades").isEmpty()) {
+			writer.println("<br />");
+			writer.println("<b>Span: </b>" + request.getParameter("novidades"));
+		}
 		writer.println("</body>");
 		writer.println("</html>");
 	}
